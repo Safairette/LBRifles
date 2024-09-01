@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoChargedRail</defName>
+		<label>charged rail</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRailgunRifle</iconPath>
+	</ThingCategoryDef>
+
+	<!--AmmoSet-->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_ChargedRail</defName>
+		<label>charged rail</label>
+		<ammoTypes>
+			<Ammo_ChargedRail>Bullet_ChargedRail</Ammo_ChargedRail>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+  <!--Ammo-->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_ChargedRail</defName>
+		<label>charged rail</label>
+		<description>Charged fin-stabilized tungsten carbide penetrator contained in a sealed chamber.</description>
+		<statBases>
+			<Mass>0.32</Mass>
+			<Bulk>0.05</Bulk>
+			<MarketValue>29.2</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoChargedRail</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Charged_Rail</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Charged</ammoClass>
+    <stackLimit>300</stackLimit>
+	</ThingDef>
+
+  <!--Projectile-->
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Bullet_ChargedRail</defName>
+		<label>charged rail</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charged/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>221</damageAmountBase>
+			<armorPenetrationSharp>250</armorPenetrationSharp>
+			<armorPenetrationBlunt>7357.5</armorPenetrationBlunt>
+			<speed>260</speed>
+		</projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>67</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Splinter>6</Fragment_Splinter>
+          <Fragment_Large>3</Fragment_Large>
+				</fragments>
+			</li>
+    </comps>
+	</ThingDef>
+
+  <!--Recipe-->
+
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_ChargedRail</defName>
+    <label>make charged rail x50</label>
+    <description>Craft 50 charged rails</description>
+    <jobString>Making charged rails.</jobString>
+    <workAmount>42000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>44</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>22</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>22</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Uranium</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_ChargedRail>50</Ammo_ChargedRail>
+    </products>
+  </RecipeDef>
+
+</Defs>
