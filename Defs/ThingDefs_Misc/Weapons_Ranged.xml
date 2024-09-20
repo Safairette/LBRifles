@@ -28,6 +28,12 @@
 			<Steel>25</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilAmount>1.9</recoilAmount>
@@ -138,6 +144,9 @@
 			</li>
 		</comps>
     <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
       <researchPrerequisite>Safa_RailShot</researchPrerequisite>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -238,7 +247,9 @@
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite><skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -335,6 +346,7 @@
         <magazineSize>30</magazineSize>
         <reloadTime>4</reloadTime>
         <ammoSet>AmmoSet_42mmRailgun</ammoSet>
+        <AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiUseBurstMode>TRUE</aiUseBurstMode>
@@ -343,6 +355,9 @@
       </li>
     </comps>
     <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
       <researchPrerequisite>Safa_RailShot</researchPrerequisite>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -413,6 +428,11 @@
       <Steel>75</Steel>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <recoilAmount>5.83</recoilAmount>
@@ -511,6 +531,9 @@
       <Chemfuel>10</Chemfuel>
     </costList>
     <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
       <researchPrerequisites>
         <li>Safa_RailShot</li>
         <li>ChargedShot</li>

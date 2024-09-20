@@ -30,7 +30,7 @@
 				</grains>
 				<pitchRange>0.9~0.77562</pitchRange>
 				<sustainLoop>False</sustainLoop>
-				<volumeRange>1.1~1.2</volumeRange>
+				<volumeRange>35~45</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>
