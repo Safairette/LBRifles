@@ -81,8 +81,8 @@
 
   <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_ChargedRail</defName>
-    <label>make charged rail x50</label>
-    <description>Craft 50 charged rails</description>
+    <label>make charged rail x25</label>
+    <description>Craft 25 charged rails</description>
     <jobString>Making charged rails.</jobString>
     <workAmount>42000</workAmount>
     <ingredients>
@@ -119,7 +119,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_ChargedRail>50</Ammo_ChargedRail>
+      <Ammo_ChargedRail>25</Ammo_ChargedRail>
     </products>
   </RecipeDef>
 
