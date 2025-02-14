@@ -19,6 +19,19 @@
 		</requiredResearchFacilities>
 		<researchViewX>16.00</researchViewX>
 		<researchViewY>3.8</researchViewY>
+		<generalRules>
+      <rulesStrings>
+        <li>subject->electric rails</li>
+				<li>subject->rail propulsion</li>
+
+        <li>subject_story->studied glitterworld monorails and modified the tech for weapons</li>
+        <li>subject_story->studied material science to reduce rail degradation</li>
+        <li>subject_story->learned how to minimize power cells to fit a compact rifle</li>
+
+        <li>subject_gerund->constructing man-portable railguns</li>
+        <li>subject_gerund->utilising electromagnetic rails</li>
+      </rulesStrings>
+    </generalRules>
 	</ResearchProjectDef>
 
 </Defs>
