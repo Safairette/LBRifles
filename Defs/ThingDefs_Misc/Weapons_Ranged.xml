@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Weapons/LBRSeven</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.86</drawSize>
+      <drawSize>0.72</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<weaponClasses>
@@ -456,6 +456,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
+        <AmmoGenPerMagOverride>12</AmmoGenPerMagOverride>
         <reloadTime>4</reloadTime>
         <ammoSet>AmmoSet_408CheyenneTactical</ammoSet>
       </li>
