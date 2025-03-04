@@ -99,7 +99,7 @@
 		<graphicData>
 			<texPath>Weapons/LBR-HC</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.86</drawSize>
+      <drawSize>0.72</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<weaponClasses>
