@@ -567,7 +567,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>6.4</reloadTime>
+        <reloadTime>6.8</reloadTime>
         <ammoSet>AmmoSet_ChargedRail</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
