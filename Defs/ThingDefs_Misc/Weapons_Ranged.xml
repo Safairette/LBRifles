@@ -95,7 +95,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>LBPack_LBRHC</defName>
 		<label>LBR-HC</label>
-		<description>A rail-powered hand cannon based off the LBR's 7th model.n\The weapon can leverage experimental splintering ammunition to mitigate its lack of stopping power.</description>
+		<description>A rail-powered hand cannon based off the LBR's 7th model.\nThe weapon can leverage experimental splintering ammunition to mitigate its lack of stopping power.</description>
 		<graphicData>
 			<texPath>Weapons/LBR-HC</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
