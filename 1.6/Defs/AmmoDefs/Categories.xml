@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RailgunSplinter</defName>
+		<label>Railgun splintering sabot</label>
+		<labelShort>Splintering</labelShort>
+		<description>Uses a discarding sabot to fire an undersized projectile at higher muzzle velocities, greatly improving armor penetration.\nThe projectile splits on impact, dealing increased tissue damage at the cost of penetration.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+</Defs>
